@@ -47,6 +47,15 @@ const data = {
       stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
       ongoing: false, live: null,
       github: "https://github.com/deepsanbui08/Healthcare_Symptom_Checker_Chatbot",
+    },
+    {
+      num: "04", badge: "Web App", badgeClass: "bg-orange-500/10 text-orange-400 border border-orange-500/20",
+      title: "Online Restaurant Booking System",
+      desc: "Web app where users can register, log in, and reserve a table at their favourite restaurant. Sends booking confirmation emails automatically.",
+      stack: ["Node.js", "Express.js", "EJS", "MongoDB",],
+      ongoing: false,
+      live: null,
+      github: "https://github.com/deepsanbui08/online_restaurant_booking"
     }
   ]
 };
