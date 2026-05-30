@@ -32,7 +32,16 @@ const data = {
       ongoing: true, github: null, live: null
     },
     {
-      num: "02", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
+      num: "02", badge: "AI App", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
+      title: "DSA Instructor AI",
+      desc: "AI-powered DSA tutor that answers only Data Structures & Algorithms questions with code examples. Supports follow-up questions with conversation memory.",
+      stack: ["React", "Vite", "Tailwind CSS", "Gemini 2.0 Flash"],
+      ongoing: false,
+      live: "https://dsa-instructor-sandy.vercel.app/",
+      github: "https://github.com/deepsanbui08/Dsa_Instructor"
+    },
+    {
+      num: "03", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
       title: "Library Management System",
       desc: "Complete library web app with role-based access, book tracking, fine calculation, image uploads and OTP-based authentication.",
       stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
@@ -41,7 +50,7 @@ const data = {
       live: null
     },
     {
-      num: "03", badge: "Machine Learning", badgeClass: "bg-green-500/10 text-green-400 border border-green-500/20",
+      num: "04", badge: "Machine Learning", badgeClass: "bg-green-500/10 text-green-400 border border-green-500/20",
       title: "Healthcare Symptom Checker",
       desc: "ML chatbot that predicts diseases from natural language symptom input using Random Forest with fuzzy matching for typo tolerance.",
       stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
@@ -49,7 +58,7 @@ const data = {
       github: "https://github.com/deepsanbui08/Healthcare_Symptom_Checker_Chatbot",
     },
     {
-      num: "04", badge: "Web App", badgeClass: "bg-orange-500/10 text-orange-400 border border-orange-500/20",
+      num: "05", badge: "Web App", badgeClass: "bg-orange-500/10 text-orange-400 border border-orange-500/20",
       title: "Online Restaurant Booking System",
       desc: "Web app where users can register, log in, and reserve a table at their favourite restaurant. Sends booking confirmation emails automatically.",
       stack: ["Node.js", "Express.js", "EJS", "MongoDB",],
