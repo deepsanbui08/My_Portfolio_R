@@ -32,7 +32,7 @@ const data = {
       ongoing: true, github: null, live: null
     },
     {
-      num: "02", badge: "AI App", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
+      num: "02", badge: "GEN AI", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
       title: "DSA Instructor AI",
       desc: "AI-powered DSA tutor that answers only Data Structures & Algorithms questions with code examples. Supports follow-up questions with conversation memory.",
       stack: ["React", "Vite", "Tailwind CSS", "Gemini 2.0 Flash"],
@@ -47,7 +47,7 @@ const data = {
       stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
       ongoing: false,
       github: "https://github.com/deepsanbui08/Library-Management-System",
-      live: null
+      live: "https://library-management-system-frontend-lime-delta.vercel.app/"
     },
     {
       num: "04", badge: "Machine Learning", badgeClass: "bg-green-500/10 text-green-400 border border-green-500/20",
@@ -63,7 +63,7 @@ const data = {
       desc: "Web app where users can register, log in, and reserve a table at their favourite restaurant. Sends booking confirmation emails automatically.",
       stack: ["Node.js", "Express.js", "EJS", "MongoDB",],
       ongoing: false,
-      live: null,
+      live: "https://online-restaurant-booking.onrender.com/",
       github: "https://github.com/deepsanbui08/online_restaurant_booking"
     }
   ]
@@ -305,14 +305,28 @@ export default function Portfolio() {
                   {p.ongoing && (
                     <span className="text-[0.75rem] text-[#ff5f57] flex items-center gap-1.5">🚧 Ongoing</span>
                   )}
-                  {p.github && (
-                    <a href={p.github} target="_blank" rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-[0.82rem] text-[#ffbd2e] font-semibold no-underline transition-all hover:gap-3 w-fit">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                      </svg>
-                      View on GitHub →
-                    </a>
+                  {(p.github || p.live) && (
+                    <div className="flex flex-wrap gap-4 mt-1">
+                      {p.github && (
+                        <a href={p.github} target="_blank" rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-[0.82rem] text-[#ffbd2e] font-semibold no-underline transition-all hover:gap-3 w-fit">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                          </svg>
+                          View On GitHub →
+                        </a>
+                      )}
+                      {p.live && (
+                        <a href={p.live} target="_blank" rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-[0.82rem] text-[#28c840] font-semibold no-underline transition-all hover:gap-3 w-fit">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                          </svg>
+                          Live Demo →
+                        </a>
+                      )}
+                    </div>
                   )}
                 </div>
               ))}
