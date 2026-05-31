@@ -13,14 +13,14 @@ const data = {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO", "JWT", "Tailwind CSS"]
     },
     {
-      icon: "🤖", title: "AI & Data Science", color: "text-green-400",
+      icon: "🤖", title: "AI & ML", color: "text-green-400",
       bg: "bg-green-500/10", border: "border-green-500/20", bar: "from-green-500 to-emerald-300",
-      tags: ["Scikit-learn", "Pandas", "NumPy", "Gemini AI", "OpenAI API"]
+      tags: ["Scikit-learn", "Pandas", "Pinecone", "RAG", "LangChain"]
     },
     {
       icon: "🛠️", title: "Tools", color: "text-purple-400",
       bg: "bg-purple-500/10", border: "border-purple-500/20", bar: "from-purple-500 to-pink-400",
-      tags: ["Git", "GitHub", "VS Code", "Vercel", "Render", "Cloudinary"]
+      tags: ["Git", "GitHub", "VS Code", "Vercel", "Render", "Cloudinary", "Tavily"]
     }
   ],
   projects: [
@@ -239,7 +239,7 @@ export default function Portfolio() {
                   {[
                     { label: "MERN Stack", cls: "text-[#ff5f57] border-red-500/30 bg-red-500/6" },
                     { label: "Machine Learning", cls: "text-[#4f8ef7] border-blue-500/30 bg-blue-500/6" },
-                    { label: "AI Integration", cls: "text-[#28c840] border-green-500/30 bg-green-500/6" },
+                    { label: "Gen AI", cls: "text-[#28c840] border-green-500/30 bg-green-500/6" },
                     { label: "Open to Work", cls: "text-[#bf5af2] border-purple-500/30 bg-purple-500/6" },
                   ].map(p => (
                     <span key={p.label} className={`px-[18px] py-2 rounded-full text-[0.8rem] font-medium border ${p.cls}`}>{p.label}</span>
