@@ -15,7 +15,7 @@ const data = {
     {
       icon: "🤖", title: "AI & ML", color: "text-green-400",
       bg: "bg-green-500/10", border: "border-green-500/20", bar: "from-green-500 to-emerald-300",
-      tags: ["Scikit-learn", "Pandas", "Pinecone", "RAG", "LangChain"]
+      tags: ["Scikit-learn", "Pandas", "Vector Databases","NLP", "RAG", "LangChain"]
     },
     {
       icon: "🛠️", title: "Tools", color: "text-purple-400",
@@ -25,23 +25,31 @@ const data = {
   ],
   projects: [
     {
-      num: "01", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
+      num: "01", badge: "Gen AI", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
+      title: "Multi-Agent Research System",
+      desc: "An AI-powered system where specialized agents autonomously search the web, scrape content, write a structured research report, and critique it — all from a single topic input.",
+      stack: ["Python", "LangChain", "Mistral AI", "Tavily", "BeautifulSoup", "Streamlit"],
+      ongoing: false,
+      live: "https://multi-agent-research-system-deep.streamlit.app/",
+      github: "https://github.com/deepsanbui08/Multi-Agent-Research-System"
+    },
+    {
+      num: "02", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
       title: "Smart College Portal",
       desc: "Full-stack role-based academic management for Admin, HOD, Faculty & Students. AI-generated class routines and real-time notifications.",
       stack: ["React.js", "Node.js", "MongoDB", "Socket.IO", "Gemini AI", "JWT", "Tailwind"],
       ongoing: true, github: null, live: null
     },
     {
-      num: "02", badge: "GEN AI", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
-      title: "DSA Instructor AI",
-      desc: "AI-powered DSA tutor that answers only Data Structures & Algorithms questions with code examples. Supports follow-up questions with conversation memory.",
-      stack: ["React", "Vite", "Tailwind CSS", "Gemini 2.0 Flash"],
-      ongoing: false,
-      live: "https://dsa-instructor-sandy.vercel.app/",
-      github: "https://github.com/deepsanbui08/Dsa_Instructor"
+      num: "03", badge: "Machine Learning", badgeClass: "bg-green-500/10 text-green-400 border border-green-500/20",
+      title: "Healthcare Symptom Checker",
+      desc: "ML chatbot that predicts diseases from natural language symptom input using Random Forest with fuzzy matching for typo tolerance.",
+      stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+      ongoing: false, live: null,
+      github: "https://github.com/deepsanbui08/Healthcare_Symptom_Checker_Chatbot",
     },
     {
-      num: "03", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
+      num: "04", badge: "MERN Stack", badgeClass: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
       title: "Library Management System",
       desc: "Complete library web app with role-based access, book tracking, fine calculation, image uploads and OTP-based authentication.",
       stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
@@ -50,15 +58,16 @@ const data = {
       live: "https://library-management-system-frontend-lime-delta.vercel.app/"
     },
     {
-      num: "04", badge: "Machine Learning", badgeClass: "bg-green-500/10 text-green-400 border border-green-500/20",
-      title: "Healthcare Symptom Checker",
-      desc: "ML chatbot that predicts diseases from natural language symptom input using Random Forest with fuzzy matching for typo tolerance.",
-      stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-      ongoing: false, live: null,
-      github: "https://github.com/deepsanbui08/Healthcare_Symptom_Checker_Chatbot",
+      num: "05", badge: "GEN AI", badgeClass: "bg-purple-500/10 text-purple-400 border border-purple-500/20",
+      title: "DSA Instructor AI",
+      desc: "AI-powered DSA tutor that answers only Data Structures & Algorithms questions with code examples. Supports follow-up questions with conversation memory.",
+      stack: ["React", "Vite", "Tailwind CSS", "Gemini 2.0 Flash"],
+      ongoing: false,
+      live: "https://dsa-instructor-sandy.vercel.app/",
+      github: "https://github.com/deepsanbui08/Dsa_Instructor"
     },
     {
-      num: "05", badge: "Web App", badgeClass: "bg-orange-500/10 text-orange-400 border border-orange-500/20",
+      num: "06", badge: "Web App", badgeClass: "bg-orange-500/10 text-orange-400 border border-orange-500/20",
       title: "Online Restaurant Booking System",
       desc: "Web app where users can register, log in, and reserve a table at their favourite restaurant. Sends booking confirmation emails automatically.",
       stack: ["Node.js", "Express.js", "EJS", "MongoDB",],
